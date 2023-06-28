@@ -5,11 +5,11 @@
   "homepage": "https://github.com/tomaspalica/goit-js-hw-09",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "https://github.com/tomaspalica/goit-js-hw-09"
+    "build": "parcel build src/*.html --public-url /https://github.com/tomaspalica/goit-js-hw-09"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "https://github.com/tomaspalica/goit-js-hw-09"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
