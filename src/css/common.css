@@ -45,3 +45,9 @@ img {
   margin: 0px;
   font-size: 20px;
  }
+ button[data-stop]{
+  height: 35px;
+  width: 60px;
+  margin: 0px;
+  font-size: 20px;  
+ }

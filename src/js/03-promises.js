@@ -26,9 +26,9 @@ const submitHandler = event => {
   let stepValue = Number (step.value)
   let amountValue = Number(amount.value)
 
-  for(let i = 1; i <= amountValue; i++){
-    let promiseDelay = valueDelay + step * i;
-
+  for(let i = 0; i <= amountValue; i++){
+    
+    let promiseDelay = valueDelay + (stepValue * i);
     createPromise(i,promiseDelay)
     .then(({position, delay})=>{
       console.log(`✅ Fulfilled promise ${position} in ${delay}ms`)
@@ -36,6 +36,8 @@ const submitHandler = event => {
     .catch(({position,delay})=>{
       console.log(`❌ Rejected promise ${position} in ${delay}ms`)
     })
+
+  
   }
 }
 form.addEventListener("submit", submitHandler)
