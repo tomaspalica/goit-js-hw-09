@@ -70,6 +70,7 @@ const options = {
 
     
   flatpickr(timePicker, options)
+  
 
 //   if(tim.seconds< 10 && tim.seconds > 0){
 //     timerSeconds.textContent = `0${tim.seconds}`} else if(tim.seconds <= 0 ){

@@ -14,8 +14,8 @@ function getRandomHexColor() {
         
         body.style.backgroundColor = getRandomHexColor()
     }, 1000)
-  
-  }
+   
+  } 
   const stopingColors = () => {
     stopBtn.setAttribute("disabled", "")
     clearInterval(timerId)
@@ -23,3 +23,4 @@ function getRandomHexColor() {
   }
 stopBtn.addEventListener("click", stopingColors)
   startBtn.addEventListener("click", makingColors);
+  console.log(1)
