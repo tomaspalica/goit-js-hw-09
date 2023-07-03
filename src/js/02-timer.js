@@ -51,6 +51,7 @@ const options = {
     }, 1000)
   
          }  
+         
     
  btnPicker.addEventListener("click",timer)
 
@@ -75,7 +76,8 @@ const options = {
 
     
   flatpickr(timePicker, options)
- 
+  console.log(1)
+  
 
 //   if(tim.seconds< 10 && tim.seconds > 0){
 //     timerSeconds.textContent = `0${tim.seconds}`} else if(tim.seconds <= 0 ){
