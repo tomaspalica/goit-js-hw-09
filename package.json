@@ -4,9 +4,9 @@
   "description": "",
   "homepage": "https://tomaspalica.github.io/goit-js-hw-09/",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html && parcel watch src/*.html"  ,
     "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tomaspalica/goit-js-hw-09"

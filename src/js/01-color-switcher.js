@@ -23,4 +23,4 @@ function getRandomHexColor() {
   }
 stopBtn.addEventListener("click", stopingColors)
   startBtn.addEventListener("click", makingColors);
-  console.log(1)
+  
