@@ -36,12 +36,13 @@ const options = {
     
   const timer = () => {
     clearInterval(timerId)
-    if(tim.days < 0 && tim.hours < 0 && tim.minutes < 0 && tim.seconds < 0){
-      clearInterval(timerId)
-    }
+    
+    
     timerId = setInterval(() => {
       
-        
+      if(tim.days <= 0 && tim.hours <= 0 && tim.minutes <= 0 && tim.seconds <= 0){
+        clearInterval(timerId)
+      }
         timerDays.textContent = addLeadingZero(tim.days)
         timerHours.textContent = addLeadingZero(tim.hours)
         timerMinutes.textContent = addLeadingZero(tim.minutes);
@@ -76,7 +77,7 @@ const options = {
 
     
   flatpickr(timePicker, options)
-  console.log(1)
+  
   
 
 //   if(tim.seconds< 10 && tim.seconds > 0){
